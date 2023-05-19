@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+
+<?php
+
+use Framework\Console\KernelInterface as Kernel;
+
+require_once realpath(__DIR__ . "/../vendor/autoload.php");
+
+$app = require realpath(__DIR__ . "/../bootstrap/app.php");
+
+$kernel = $app->get(Kernel::class); 
+
+$status = $kernel->handle();
+
+exit($status);

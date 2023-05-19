@@ -1,0 +1,24 @@
+{
+    "name": "sergiodanilojr/clean-arch-php",
+    "description": "Clean Archtecture",
+    "type": "project",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "framework"
+        }
+    ],
+    "require": {
+        "sergiodanilojr/framework": "dev-main",
+        "spipu/html2pdf": "dev-master"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.2"
+    }
+}
